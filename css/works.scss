@@ -1,0 +1,246 @@
+//設定
+$black-color: #707070;
+$nav-bgColor: #BCC1C2;
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+body  {
+    font-size: 14px;
+    font-family: "Andale Mono", "ＭＳ ゴシック", "Courier New", "Osaka－等幅", monospace;
+    color: $black-color;
+
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $black-color;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+img {
+    border: 0;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+//ヘッダー
+header {
+    height: 80px;
+    .inner {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        h1  {
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .head-right {
+            .instagram-icon {
+                margin-right: 80px;
+                i {
+                    font-size: 40px;
+                }
+            }
+            .humberger {
+                .nav-button {
+                    position: fixed;
+                    top: 4.5%;
+                    right: 5%;
+                    z-index: 999;
+                    width: 50px;
+                    height: 50px;
+                    background-color: $black-color;
+                    .line {
+                        width: 30px;
+                        height: 2px;
+                        background-color: #fff;
+                        &:first-child {
+                            position: relative;
+                            top: 12px;
+                            left: 10px;
+                        }
+                        &:nth-child(2) {
+                            position: relative;
+                            top: 22px;
+                            left: 10px;
+                        }
+                        &:last-child {
+                            position: relative;
+                            top: 32px;
+                            left: 10px;
+                        }
+                    }
+                }
+                .nav-contents {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 998;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: $nav-bgColor;
+                    ul {
+                        position: relative;
+                        top: 50%;
+                        left: 20%;
+                        -ms-transform: translate(-10%,-50%);
+                        -webkit-transform: translate(-10%,-50%);
+                        transform: translate(-10%,-50%);
+                        li {
+                            font-size: 50px;
+                            line-height: 2;
+                            a {
+                                &::after {
+                                    display: inline-block;
+                                    content: "";
+                                    width: 20px;
+                                    height: 3px;
+                                    background-color: $black-color;
+                                    position: relative;
+                                    top: -10px;
+                                    left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }    
+            }    
+        }
+    }
+    .flex {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+
+
+
+
+main {
+
+    //ファーストビュー
+    .top-fv {
+        height: calc(100vh - 80px);
+        // background-color: blue;
+        .inner {
+            h2 {
+                font-size: 50px;
+                span {
+                    font-size: 30px;
+                }
+            }
+            .top-box {
+                width: 60%;
+                height: 60%;
+                border: 2px solid $black-color;
+            }
+        }
+        .flex {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+
+
+    //メインコンテンツ共通
+    section {
+        margin-bottom: 150px;
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    }
+    h3 {
+        margin-bottom: 40px;
+        font-size: 36px;
+        text-align: center;
+    }
+    .inner {
+        max-width: 1200px;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .more-button {
+        font-size: 18px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+
+
+    //アバウト
+    .aboutMe {
+        .container {
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+            .icon {
+                width: calc(100% / 4);
+                img {
+                    width: 100%;
+                }
+            }
+            .aboutMe-text {
+                width: calc(100% / 2);
+                p {
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    //セクションコンテンツ
+    .sectionContents {
+        .container {
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            margin-bottom: 10px;
+            width: 100%;
+
+            li {
+                width: calc(94% / 3);
+                margin-right: 3%;
+
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+                
+                img {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+footer {
+    max-width: 1200px;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    p {
+        line-height: 200px;
+    }
+}

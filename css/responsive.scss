@@ -1,0 +1,268 @@
+//設定
+$black-color: #707070;
+$nav-bgColor: #BCC1C2;
+$bg-color: #e8e8e8;
+$orange: #eb6100;
+
+//mixinの引数は$breakpoint、引数の初期値はsp
+@mixin mq($breakpoint: sp) {
+	@media #{map-get(
+		//map-get関数の$map部
+		(
+		"sp": "screen and (max-width: 599px)",
+		"tab": "screen and (min-width: 600px)",
+		"pc": "screen and (min-width: 1025px)",
+		),
+
+		//map-get関数の$key部
+		$breakpoint
+		)}{
+
+		//呼び出し側の内容をもらう
+		@content;
+	}
+}
+
+
+//ヘッダー
+.header {
+	//タブレット表示
+	@include mq('tab') {
+		.logo {
+			height: 40px;
+			width: auto;
+		}
+		.navContents {
+			ul {
+				li {
+					margin-right: 20px;
+					a {
+						font-size: 1.4rem;
+					}
+				}
+			}   
+		}
+	}
+	//PC表示
+	@include mq('pc') {
+		padding: 3vw 4vw 0;
+	}
+}
+
+
+//ファーストビュー
+.top-fv {
+	//タブレット表示
+	@include mq('tab') {
+		.inner {
+			h2 {
+				font-size: 3rem;
+				line-height: 1;
+				margin-bottom: 50px;
+	
+				span {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	//pc表示
+	@include mq('pc') {
+		padding: 3vw 4vw 0;
+
+		.inner {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.top-box {
+			max-width: 30vw;
+		}
+	}
+}
+
+
+
+//アバウト
+.about {
+	//タブレット表示
+	@include mq('tab') {
+		max-width: 1200px;
+		margin: 0 auto 180px;
+
+		h3 {
+			font-size: 3rem;
+		}
+		.container {
+			p {
+				font-size: 1.2rem;
+			}
+		}
+
+		//枠線
+		hr {
+			border-top: 2px dashed #ccc;
+		}
+		hr::after {
+			padding: 0 1em;
+		}
+	}
+
+	//pc表示
+	@include mq('pc') {
+		.container {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			.meIcon {
+				width: 35%;
+	
+				.inner {
+					margin-bottom: 10px;
+				}
+				.name {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.aboutDitile {
+			width: 55%;
+
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+
+//sectionContents 共通
+.sectionContents {
+	//タブレット表示
+	@include mq('tab') {
+		max-width: 1200px;
+		margin: 0 auto 180px;
+
+		.inner {
+			h3 {
+				font-size: 3rem;
+			}
+		}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+	
+			.items {
+				width: calc(94% / 2);
+				margin-right: 6%;
+				margin-bottom: 60px;
+	
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+				
+				h4 {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+//pc表示
+@include mq('pc') {
+	#illust {
+		.container {
+			.items {
+				width: calc(88% / 4);
+				margin-right: 4%;
+				margin-bottom: 60px;
+	
+				&:nth-child(2n) {
+					margin-right: 4%;
+				}
+				&:nth-child(4n) {
+					margin-right: 0;
+				}
+				
+			}
+		}
+	}	
+}
+
+
+
+//フッター
+footer {
+	//タブレット表示
+	@include mq('tab') {
+		height: 40vh;
+		p {
+			line-height: 40vh;
+			font-size: 1.2rem;
+		}
+	}
+
+	//pc表示
+	@include mq('pc') {
+		
+	}
+}
+
+
+
+
+
+
+
+/*
+作品ページ
+*/
+
+#worksPage {
+	//タブレット表示
+	@include mq('tab') {
+		.main {
+			margin-top: 15vh;
+		}
+
+		.itemTitle {
+			margin-bottom: 20px;
+	
+			h2 {
+				font-size: 2.5rem;
+			}
+			p {
+				font-size: 1.2rem;
+			}
+		}
+		
+		.worksDetail {
+			margin-bottom: 180px;
+	
+			li {
+				font-size: 1.1rem;
+				margin-bottom: 20px;
+			}
+	
+			a {
+				font-size: 1.2rem;
+				margin-bottom: 50px;
+			}
+			span {
+				font-size: 1.2rem;
+			}
+	
+		}
+	}
+
+	//pc表示
+	@include mq('tab') {
+		.main {
+			width: 50vw;
+		}
+	}
+}

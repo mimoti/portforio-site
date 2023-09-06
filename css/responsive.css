@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@media screen and (min-width: 600px) {
+  .header .logo {
+    height: 40px;
+    width: auto;
+  }
+  .header .navContents ul li {
+    margin-right: 20px;
+  }
+  .header .navContents ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    padding: 3vw 4vw 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .top-fv .inner h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  .top-fv .inner h2 span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .top-fv {
+    padding: 3vw 4vw 0;
+  }
+  .top-fv .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top-fv .top-box {
+    max-width: 30vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .about {
+    max-width: 1200px;
+    margin: 0 auto 180px;
+  }
+  .about h3 {
+    font-size: 3rem;
+  }
+  .about .container p {
+    font-size: 1.2rem;
+  }
+  .about hr {
+    border-top: 2px dashed #ccc;
+  }
+  .about hr::after {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .container .meIcon {
+    width: 35%;
+  }
+  .about .container .meIcon .inner {
+    margin-bottom: 10px;
+  }
+  .about .container .meIcon .name {
+    margin-bottom: 0;
+  }
+  .about .aboutDitile {
+    width: 55%;
+  }
+  .about .aboutDitile p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sectionContents {
+    max-width: 1200px;
+    margin: 0 auto 180px;
+  }
+  .sectionContents .inner h3 {
+    font-size: 3rem;
+  }
+  .sectionContents .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sectionContents .container .items {
+    width: calc(94% / 2);
+    margin-right: 6%;
+    margin-bottom: 60px;
+  }
+  .sectionContents .container .items:nth-child(2n) {
+    margin-right: 0;
+  }
+  .sectionContents .container .items h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #illust .container .items {
+    width: calc(88% / 4);
+    margin-right: 4%;
+    margin-bottom: 60px;
+  }
+  #illust .container .items:nth-child(2n) {
+    margin-right: 4%;
+  }
+  #illust .container .items:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    height: 40vh;
+  }
+  footer p {
+    line-height: 40vh;
+    font-size: 1.2rem;
+  }
+}
+
+/*
+作品ページ
+*/
+@media screen and (min-width: 600px) {
+  #worksPage .main {
+    margin-top: 15vh;
+  }
+  #worksPage .itemTitle {
+    margin-bottom: 20px;
+  }
+  #worksPage .itemTitle h2 {
+    font-size: 2.5rem;
+  }
+  #worksPage .itemTitle p {
+    font-size: 1.2rem;
+  }
+  #worksPage .worksDetail {
+    margin-bottom: 180px;
+  }
+  #worksPage .worksDetail li {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  #worksPage .worksDetail a {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  #worksPage .worksDetail span {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #worksPage .main {
+    width: 50vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
