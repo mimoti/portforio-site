@@ -19,3 +19,14 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.addEventListener('scroll', () => {
+  const headHight = document.getElementById("js-header").offsetHeight;
+  const scroll = scrollY;
+  const header = document.getElementById("js-header");
+
+  if(headHight <= scroll) {
+    header.classList.add("change");
+  } else {
+    header.classList.remove("change");
+  }
+});

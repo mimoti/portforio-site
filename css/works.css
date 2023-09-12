@@ -1,0 +1,196 @@
+@charset "UTF-8";
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Andale Mono", "ＭＳ ゴシック", "Courier New", "Osaka－等幅", monospace;
+  color: #707070;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  border: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  height: 80px;
+}
+header .inner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+header .inner h1 a img {
+  width: 100%;
+}
+header .inner .head-right .instagram-icon {
+  margin-right: 80px;
+}
+header .inner .head-right .instagram-icon i {
+  font-size: 40px;
+}
+header .inner .head-right .humberger .nav-button {
+  position: fixed;
+  top: 4.5%;
+  right: 5%;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background-color: #707070;
+}
+header .inner .head-right .humberger .nav-button .line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+header .inner .head-right .humberger .nav-button .line:first-child {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+header .inner .head-right .humberger .nav-button .line:nth-child(2) {
+  position: relative;
+  top: 22px;
+  left: 10px;
+}
+header .inner .head-right .humberger .nav-button .line:last-child {
+  position: relative;
+  top: 32px;
+  left: 10px;
+}
+header .inner .head-right .humberger .nav-contents {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100vw;
+  height: 100vh;
+  background-color: #BCC1C2;
+}
+header .inner .head-right .humberger .nav-contents ul {
+  position: relative;
+  top: 50%;
+  left: 20%;
+  transform: translate(-10%, -50%);
+}
+header .inner .head-right .humberger .nav-contents ul li {
+  font-size: 50px;
+  line-height: 2;
+}
+header .inner .head-right .humberger .nav-contents ul li a::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #707070;
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+header .flex {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .top-fv {
+  height: calc(100vh - 80px);
+}
+main .top-fv .inner h2 {
+  font-size: 50px;
+}
+main .top-fv .inner h2 span {
+  font-size: 30px;
+}
+main .top-fv .inner .top-box {
+  width: 60%;
+  height: 60%;
+  border: 2px solid #707070;
+}
+main .top-fv .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+main section {
+  margin-bottom: 150px;
+}
+main section:last-child {
+  margin-bottom: 50px;
+}
+main h3 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  text-align: center;
+}
+main .inner {
+  max-width: 1200px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .more-button {
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+}
+main .aboutMe .container {
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+main .aboutMe .container .icon {
+  width: 25%;
+}
+main .aboutMe .container .icon img {
+  width: 100%;
+}
+main .aboutMe .container .aboutMe-text {
+  width: 50%;
+}
+main .aboutMe .container .aboutMe-text p {
+  line-height: 2;
+}
+main .sectionContents .container {
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 100%;
+}
+main .sectionContents .container li {
+  width: 31.3333333333%;
+  margin-right: 3%;
+}
+main .sectionContents .container li:nth-child(3) {
+  margin-right: 0;
+}
+main .sectionContents .container li img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+footer {
+  max-width: 1200px;
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+}
+footer p {
+  line-height: 200px;
+}/*# sourceMappingURL=works.css.map */

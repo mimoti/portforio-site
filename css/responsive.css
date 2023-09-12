@@ -10,11 +10,16 @@
   .header .navContents ul li a {
     font-size: 1.4rem;
   }
+  .header.change {
+    padding: 2vw 5vw 2vw;
+  }
 }
-
 @media screen and (min-width: 1025px) {
   .header {
     padding: 3vw 4vw 0;
+  }
+  .header.change {
+    padding: 1vw 4vw 1vw;
   }
 }
 
@@ -28,20 +33,14 @@
     font-size: 2rem;
   }
 }
-
 @media screen and (min-width: 1025px) {
   .top-fv {
     padding: 3vw 4vw 0;
   }
   .top-fv .inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .top-fv .top-box {
     max-width: 30vw;
@@ -66,17 +65,11 @@
     padding: 0 1em;
   }
 }
-
 @media screen and (min-width: 1025px) {
   .about .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .about .container .meIcon {
     width: 35%;
@@ -104,17 +97,12 @@
     font-size: 3rem;
   }
   .sectionContents .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .sectionContents .container .items {
-    width: calc(94% / 2);
+    width: 47%;
     margin-right: 6%;
     margin-bottom: 60px;
   }
@@ -128,7 +116,7 @@
 
 @media screen and (min-width: 1025px) {
   #illust .container .items {
-    width: calc(88% / 4);
+    width: 22%;
     margin-right: 4%;
     margin-bottom: 60px;
   }
@@ -139,7 +127,6 @@
     margin-right: 0;
   }
 }
-
 @media screen and (min-width: 600px) {
   footer {
     height: 40vh;
@@ -149,7 +136,6 @@
     font-size: 1.2rem;
   }
 }
-
 /*
 作品ページ
 */
@@ -181,10 +167,8 @@
     font-size: 1.2rem;
   }
 }
-
 @media screen and (min-width: 600px) {
   #worksPage .main {
     width: 50vw;
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */

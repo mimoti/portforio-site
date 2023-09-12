@@ -42,10 +42,18 @@ $orange: #eb6100;
 				}
 			}   
 		}
+
+		&.change {
+			padding: 2vw 5vw 2vw;
+		}
 	}
 	//PC表示
 	@include mq('pc') {
 		padding: 3vw 4vw 0;
+
+		&.change {
+			padding: 1vw 4vw 1vw;
+		}
 	}
 }
 

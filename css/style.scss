@@ -10,7 +10,8 @@ $orange: #eb6100;
 }
 body  {
 	font-size: 1rem;
-	font-family: "Andale Mono", "ＭＳ ゴシック", "Courier New", "Osaka－等幅", monospace;
+	// font-family: "Andale Mono", "ＭＳ ゴシック", "Courier New", "Osaka－等幅", monospace;
+	font-family: 'Mandali', sans-serif, 'Noto Sans JP', sans-serif;
 	color: $black-color;
 	background-color: $bg-color;
 
@@ -38,12 +39,14 @@ img {
 
 //ヘッダー
 .header {
-	padding: 4vw 5vw 0;
+	padding: 3vw 5vw 3vw;
 	width: 100vw;
 	height: auto;
 	position: fixed;
 	top: 0;
 	z-index: 100;
+
+	transition: all .5s;
 
 	.inner {
 		display: flex;
@@ -87,6 +90,10 @@ img {
 				}
 			}
 		}   
+	}
+
+	&.change {
+		background-color: rgba(#fff, .8);	
 	}
 }
 
